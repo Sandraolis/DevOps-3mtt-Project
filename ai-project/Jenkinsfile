@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('Hi') {
+            steps {
+                echo 'Hi everyone!!!'
+            }
+        }
+         stage('Pipeline job') {
+            steps {
+                echo 'Sandra first pipeline'
+            }
+        }
+        stage('Docker') {
+            steps {
+                echo 'Sandra first docker command'
+            }
+        }
+    }
+}
