@@ -36,6 +36,12 @@ pipeline {
                 echo 'github action is  lovely'
             }
         }
+
+        stage('final') {
+            steps {
+                echo 'closing remark'
+            }
+        }
     }
 
 
