@@ -27,6 +27,16 @@ pipeline {
             steps {
                 echo 'this is kubernetes session'
             }
+    
+        }
+    
+    
+        stage('github action') {
+            steps {
+                echo 'github action is  lovely'
+            }
         }
     }
+
+
 }
