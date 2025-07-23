@@ -22,5 +22,11 @@ pipeline {
                 echo 'Sandra first docker command'
             }
         }
+
+        stage('kubernetes') {
+            steps {
+                echo 'this is kubernetes session'
+            }
+        }
     }
 }
