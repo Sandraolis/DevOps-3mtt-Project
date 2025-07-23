@@ -39,7 +39,8 @@ pipeline {
 
         stage('final') {
             steps {
-                echo 'closing remark'
+                checkout changelog: false, poll: false, scm: scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-connect', url: 'https://github.com/Sandraolis/jenkins-scm.git']])
+                echo ${env.BUILD_ID}
             }
         }
     }
