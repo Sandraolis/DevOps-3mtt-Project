@@ -18,8 +18,11 @@ Nginx is a powerful and widely used web server known for it performance and flex
 # Prerequisites
 
 **Linux Servers**: At least one server to act as the target machine and an optional control machine for ansible.
-**Ansible** Installed: Ansible is installed on the control machine.
+
+**Ansible Installed**: Ansible is installed on the control machine. you can check this guide [out](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
+
 **SSH Access**: SSH access between the control machine and target servers with public key authentication.
+
 **Tools**: A text editor to create and edit Ansible playbooks.
 
 
