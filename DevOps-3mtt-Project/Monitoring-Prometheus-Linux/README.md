@@ -158,7 +158,7 @@ scrape_configs:
 
   - job_name: "node-exporter"
     static_configs:
-      - targets: ["prometheus-server-public-IP"]
+      - targets: ["prometheus-server-public-IP:9100"]
 ```
 
 5. Save the file and restart Prometheus to apply the changes.
@@ -175,7 +175,7 @@ sudo systemctl status prometheus
 
 ## Task 4 - Verify and Query Node Exporter Metrics in Prometheus
 
-1. Access the prometheus web interface (**http://192.168.0.**:9090/targets).
+1. Access the prometheus web interface (**http://public-server-ip:9090/targets).
 2. Run a test query to verify Node Exporter metrics.
 - Example: **node_cpu_seconds_total** to view CPU usage.
 3. Check the "Target" page in Premetheus to confirm the Node Exporter target is listed and "UP".
